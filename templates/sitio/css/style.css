@@ -1,0 +1,22 @@
+/*body{
+
+    background-image: url(fondo1.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}*/
+
+.contenedor {
+
+    background-image: url("https://raw.githubusercontent.com/Edreione/Fottos-Lineas/main/wallpaperbetter.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+/*<p>
+<img src="https://github.com/Edreione/Fottos-Lineas/blob/main/Nvpo%20logo2.jpg?raw=true" class="rounded mx-auto d-block shadow-lg border-success" alt="..." style="position: absolute; top: 0; left: 0; margin: 7px;">
+                    </p>*/

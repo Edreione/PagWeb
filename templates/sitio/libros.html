@@ -1,0 +1,84 @@
+{% include "sitio/cabecera.html" %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("css/pex.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .card {
+            background-color:  rgba(255, 0, 0, 0);
+            padding: 1px;
+            border: none;
+            border-radius: 60px;
+            text-align: center;
+        }
+
+        .card-body {
+            background-color:  rgba(255, 0, 0, 0);
+            padding: 4px;
+            border-radius: 80px;
+            text-align: center;
+            color: #ffffff;
+            font-size: .5rem;
+        }
+
+        .second-corner-image {
+            position: fixed;
+            bottom: 80px;
+            right: 10px; /* Cambié 'left' por 'right' para mover la imagen a la derecha */
+            z-index: 1000;
+        }
+
+        .second-corner-image img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .btn-secondary {
+            background-color: rgba(22, 22, 24, 0.1);
+            color: #ffffff;
+            font-size: .6rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        {% for libro in libros %}
+        <div class="col-md-2">
+            <div class="card">
+                <img class="card-img-top" src="/img/{{ libro[2] }}" alt="Title" />
+                <div class="card-body">
+                    <h6 class="card-title">{{ libro[1] }}</h6>
+                    <p class="card-text">
+                        <a class="btn btn-secondary" href="{{ libro[3] }}" role="button" target="_blank">@Leer</a>      
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div>
+        <a href="https://www.youtube.com/watch?v=o4L6CQRwEdY&list=PL33XZ8rq3p-bIk5GE5_1bk54zAAdf7itE" target="_blank">
+            <img src="https://github.com/Edreione/Fottos-Lineas/blob/main/EEF%20LOG%20EE.png?raw=true" alt="Imagen de Enlace" class="rounded mx-auto d-block shadow-lg border-success" style="position: absolute; top: 0; left: 0; margin: 7px;">
+        </a>
+    </div>
+
+    <div class="second-corner-image">
+        <img src="css/Trigo.png" alt="Segunda imagen en la esquina">
+    </div>
+
+    {% include "sitio/pie.html" %}
+</body>
+</html>
+

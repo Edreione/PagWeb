@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un viaje al corazón</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url("css/pex.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .content-container {
+            padding: 20px;
+            background-color: rgba(89, 101, 110, 0.3); /* Fondo semi-transparente */
+            border-radius: 15px;
+            max-width: 600px;
+            margin: auto;
+            color: #c1c9cc;
+            border: 2px solid #a4a5a7; /* Agrega un borde de 2px con el color #9dbbc9 */
+        }
+
+        .second-corner-image img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content-container .card-body {
+            color: #edf0f1 !important;
+        }
+        
+        .link-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 7px;
+        }
+    </style>
+</head>
+<body>
+
+    {% include "sitio/cabecera.html" %}
+
+    <div class="content-container">
+        <div class="card bg-transparent">
+            <div class="card-body">
+                <h2>Un viaje al corazón</h2>
+                <p> "Bienaventurado el que tú escogieres y atrajeres a ti, Para que habite en tus atrios; 
+                    Seremos saciados del bien de tu casa, De tu santo templo." (Salmos 65:4)</p>
+            </div>
+        </div>
+
+        <p>“Y ahora permanecen la fe, la esperanza y el amor, estos tres; pero el mayor de ellos es el amor” (1 Corintios 13:13)</p>
+
+        <div>
+        <p>❄.....................................................✡......................................................❄ </p>
+
+        </div>
+        
+        <div>
+            <h5>"Encuentra las respuestas a tus preguntas más profundas."</h5>
+            <p>¿Alguna vez te has preguntado por qué estamos aquí o cuál es el sentido de la vida?</p>
+        </div>
+
+        <div>
+            <p>La Biblia tiene las respuestas que buscas. Explora sus enseñanzas y descubre cómo aplicarlas a tu vida diaria.</p> 
+            <p>¡Crece espiritualmente y alcanza tu máximo potencial!</p> 
+            <div>
+                <h7>"Este pequño espacio esta hecho para buscar un lugar para Dios en tu corazón" ✞</h7>
+            </div>
+        </div>
+    </div>
+
+    <div class="link-image">
+        <a href="https://www.youtube.com/watch?v=o4L6CQRwEdY&list=PL33XZ8rq3p-bIk5GE5_1bk54zAAdf7itE" target="_blank">
+            <img src="https://github.com/Edreione/Fottos-Lineas/blob/main/EEF%20LOG%20EE.png?raw=true" alt="Logo" class="rounded shadow-lg border-success">
+        </a>
+    </div>
+
+    {% include "sitio/pie.html" %}
+
+</body>
+</html>

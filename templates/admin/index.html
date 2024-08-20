@@ -1,0 +1,33 @@
+{% include "admin/cabecera.html" %} 
+
+    <div class="p-3" style="background-color: rgba(255, 255, 255, 0.5);">
+        <div class="container">
+            <div
+                class="display-5">Bienvenid@ <strong> {{ session["Usuario"] }}  a administrador del sitio web</h1>
+                <p class="lead">Gestión de Información </p>
+                    <hr class="my-2">
+                    <p class="lead">
+                        <a class="btn btn-primary btn-primary " href="libros" role="button">Empezar la gestión</a>
+                    </p>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div
+              
+            
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            background-image: url("https://github.com/Edreione/Imegenes-Pag-Web/blob/main/wallpaperbetter.jpg?raw=true");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <div>
+    
+{% include "admin/pie.html" %} 
